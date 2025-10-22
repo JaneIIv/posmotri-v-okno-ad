@@ -92,6 +92,11 @@ ol {
   inline-size: 711px;
   box-sizing: 386px;
   margin-block-end: 16px;
+  position: relative;
+}
+
+.content__list-container {
+  position: relative;
 }
 
 .content__list-item {
