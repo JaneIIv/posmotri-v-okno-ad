@@ -11,6 +11,7 @@ html {
 .page {
   display: flex;
   align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -68,21 +69,16 @@ ol {
   gap: 26px;
 }  
 
-.result{
-  grid-area: result;
-}
-
 .search-form{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.content__list-container{
+.content__list {
+  max-inline-size: 399px;
+  block-size: 298px;
   overflow-y: auto;
-  padding-right: 10px;
-  margin-top: 20px;
-  height: 534px;
 }
 
 .result__video{
@@ -96,7 +92,6 @@ ol {
   inline-size: 711px;
   box-sizing: 386px;
   margin-block-end: 16px;
-  position: relative;
 }
 
 .content__list-item:not(:last-child){
@@ -114,10 +109,11 @@ ol {
   inline-size: 194px;
   block-size: 103px;
   display: block;
-  padding: 1px 1px 1px 0;
 }
 
 .content__video-card-description-container{
   flex-grow: 1;
-  padding: 3px 0 0 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
