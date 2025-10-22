@@ -94,6 +94,10 @@ ol {
   margin-block-end: 16px;
 }
 
+.content__list-item {
+  padding: 0 3px;
+}
+
 .content__list-item:not(:last-child){
   margin-bottom: 30px;
 }
@@ -101,6 +105,8 @@ ol {
 .content__video-card{
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .content__video-card-thumbnail{
@@ -142,6 +148,13 @@ ol {
   text-decoration: none;
   color: #FFFFFF;
   display: block;
+  padding: 2px;
+  cursor: pointer;
+}
+
+/* Текущая карточка */
+.content__card-link_current {
+  background: #545050;
 }
 
 .content__video-card-title{
@@ -174,6 +187,8 @@ ol {
 .search-form__label{
   display: flex;
   width: fit-content;
+  align-items: center;
+  cursor: pointer;
 }
 
 .search-form__textfield{
@@ -190,8 +205,18 @@ ol {
   line-height: normal;
   min-inline-size: 225px;
   max-inline-size: 225px;
+  padding: 2.5px 0;
 }
-  
+
+/* Стили для чекбокса */
+.search-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .search-form__pseudo-checkbox {
   display: flex;
   align-items: center;
@@ -210,12 +235,12 @@ ol {
   height: 15px;
   background: #fff;
 }
-
+  
 .search-form__label:hover .search-form__label-text,
 .button:hover,
-.content__card-link:hover {
+.content__card-link:hover .content__video-card-title,
+.content__card-link:hover .content__video-card-description {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .search-form__textfield:hover {
@@ -256,7 +281,7 @@ ol {
 }
 
 .button:active,
-.content__list-item:active {
+.content__card-link:active {
   background: #545050;
   text-decoration: none;
 }
