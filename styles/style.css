@@ -55,7 +55,6 @@ ol {
   white-space: nowrap;
 }
 
-/* Layout */
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -64,7 +63,6 @@ ol {
   inline-size: 100%;
 }
 
-/* Result section */
 .result {
   display: flex;
   flex-direction: column;
@@ -84,7 +82,6 @@ ol {
   object-position: center;
 }
 
-/* Content details section */
 .content__details {
   display: flex;
   flex-direction: column;
@@ -114,7 +111,6 @@ ol {
   position: relative;
 }
 
-/* Custom scrollbar */
 .content__list::-webkit-scrollbar {
   width: 4px;
 }
@@ -210,7 +206,6 @@ ol {
   flex-shrink: 0;
 }
 
-/* Search form */
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -307,7 +302,6 @@ ol {
   border: 1px solid #fff;
 }
 
-/* Buttons */
 .button {
   background: transparent;
   border: 1px solid #fff;
